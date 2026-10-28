@@ -183,12 +183,11 @@
       min-width: 0;
     }
     .person-info h2 {
-      font-size: 1.08rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: #ffffff;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      line-height: 1.25;
+      margin-bottom: 2px;
     }
     .person-info .role {
       font-size: 0.8rem;
@@ -382,7 +381,7 @@
           </svg>
         </div>
         <div class="person-info">
-          <h2>Ing. Luis Ariel Mesa Mesa</h2>
+          <h2>Ing. Luis Ariel Mesa, MSc., PhD(c).</h2>
           <div class="role">Director de Trabajo de Grado</div>
           <div class="org">Docente Escuela de Ing. Electrónica &bull; UPTC</div>
         </div>
@@ -411,7 +410,7 @@
           </svg>
         </div>
         <div class="person-info">
-          <h2>Ing. Diego Andrés Monroy V.</h2>
+          <h2>Ing. Diego Andrés Monroy Valero, Esp.</h2>
           <div class="role">Coordinador de Práctica Empresarial</div>
           <div class="org">Investigación, Desarrollo e Innovación &bull; PLAST INNOVA</div>
         </div>
@@ -451,7 +450,7 @@
     }
 
     function downloadVCard() {
-      const vcardData = `BEGIN:VCARD\nVERSION:3.0\nN:Rodríguez Ramírez;Daniel Camilo;;;\nFN:Daniel Camilo Rodríguez Ramírez\nORG:UPTC - Escuela de Ingeniería Electrónica;PLAST INNOVA S.A.\nTITLE:Ingeniero Electrónico - Desarrollador Prototipo ICT\nTEL;TYPE=CELL,VOICE:+573225853732\nEMAIL;TYPE=PREF,INTERNET:daniel.rodriguez10@uptc.edu.co\nURL;TYPE=LinkedIn:https://www.linkedin.com/in/daniel-camilo-rodríguez-ramírez-341556207\nNOTE:Director: Ing. Luis Ariel Mesa (+57 311 4559936)\\nCoordinador: Ing. Diego Andrés Monroy (+57 318 6495849)\nEND:VCARD`;
+      const vcardData = `BEGIN:VCARD\nVERSION:3.0\nN:Rodríguez Ramírez;Daniel Camilo;;;\nFN:Daniel Camilo Rodríguez Ramírez\nORG:UPTC - Escuela de Ingeniería Electrónica;PLAST INNOVA S.A.\nTITLE:Ingeniero Electrónico - Desarrollador Prototipo ICT\nTEL;TYPE=CELL,VOICE:+573225853732\nEMAIL;TYPE=PREF,INTERNET:daniel.rodriguez10@uptc.edu.co\nURL;TYPE=LinkedIn:https://www.linkedin.com/in/daniel-camilo-rodríguez-ramírez-341556207\nNOTE:Director: Ing. Luis Ariel Mesa, MSc., PhD(c). (+57 311 4559936)\\nCoordinador: Ing. Diego Andrés Monroy Valero, Esp. (+57 318 6495849)\nEND:VCARD`;
 
       const blob = new Blob([vcardData], { type: 'text/vcard;charset=utf-8;' });
       const url = URL.createObjectURL(blob);
